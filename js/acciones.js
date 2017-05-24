@@ -34,7 +34,7 @@ function onDeviceReady(){
 		  'Accuracy:'            +position.coords.accuracy      +'\n'+
 		  'Altitude Accuracy:'            +position.coords.altitudeAccuracy      +'\n'+
 		  'Heading:'            +position.coords.heading      +'\n'+
-		  'Speeed:'            +position.coords.speeed      +'\n'+
+		  'Speed:'            +position.coords.speed      +'\n'+
 		  'Timestamp:'            +position.coords.timestamp     +'\n');
   };
   
@@ -66,7 +66,7 @@ function onDeviceReady(){
 	};
 	
 	function onError(error){
-		alert('code:'   +error.code   +'\n');
+		alert('code:'   +error.code  +'\n'+ 'message:' + error.message   +'\n');
 	}
 	
    }
